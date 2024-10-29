@@ -1,0 +1,177 @@
+/* home.css */
+
+/* Import custom Google font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Global styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container Styling */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Styling for the hero section */
+.hero_section {
+  background: linear-gradient(135deg, #f6f6f6 0%, #f0f0f1 100%);
+  padding: 100px 0;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+/* Styling for the content inside the hero section */
+.hero_content {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  z-index: 1;
+  position: relative;
+  margin-bottom: 30px; /* Space below the hero content */
+}
+
+/* Subtitle styling */
+.hero_subtitle {
+  font-size: 28px;
+  font-weight: 500;
+  color: #f9d342;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* Main heading styling */
+.hero_content h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  color: #333;
+}
+
+/* Paragraph styling */
+.hero_content p {
+  font-size: 18px;
+  color: #514646;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the button */
+.buy_btn {
+  background-color: #0a0a0ad3; /* Button background color */
+  color: white; /* Make text white */
+  padding: 12px 25px;
+  border: none;
+  border-radius: 50px; /* Rounded corners */
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  text-transform: uppercase;
+  font-weight: 700; /* Bold text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block;
+}
+
+.buy_btn:hover {
+  background-color: #504d4dac; /* Darken button on hover */
+  transform: scale(1.1); /* Slight zoom on hover */
+  text-decoration: none; /* Ensure no underline appears on hover */
+  color: white; /* Ensure the text remains white */
+}
+
+
+/* Styling for the image inside the hero section */
+.hero_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  overflow: hidden;
+}
+
+.hero_img img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+}
+
+.hero_img img:hover {
+  transform: scale(1.05);
+}
+
+/* Footer (Optional) */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero_section {
+    padding: 50px 0;
+    flex-direction: column;
+  }
+
+  .hero_content h2 {
+    font-size: 2rem;
+  }
+
+  .hero_subtitle {
+    font-size: 1.25rem;
+  }
+
+  .buy_btn {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+
+  .hero_img {
+    width: 100%;
+    position: relative;
+  }
+
+  .hero_img img {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero_content h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero_subtitle {
+    font-size: 1.2rem;
+  }
+
+  .buy_btn {
+    padding: 8px 18px;
+    font-size: 0.85rem;
+  }
+}
